@@ -13,11 +13,11 @@ import javax.persistence.*;
 public class City {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Integer id;
     private String name;
     private String district;
-//    @Column(name = "CountryCode")
-//    private String countryCode;
-    private int population;
+    @Column(name = "CountryCode")
+    private String countryCode;
+    private Integer population;
 
 }

@@ -16,19 +16,25 @@ public class Country {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private String code;
     private String name;
-//    private boolean continent;
+    private String continent;
     private String region;
-//    @Column(name = "SurfaceArea")
-//    private Float surfaceArea;
-//    private short indepYear;
-//    private int population;
-//    private float lifeExpectancy;
-//    private float gNp;
-//    private float gNpOld;
-//    private String localeName;
-//    private String gouvernementForme;
-//    private String headOfState;
-//    private int capital;
-//    private String code2;
+    @Column(name = "SurfaceArea")
+    private Float surfaceArea;
+    @Column(name = "IndepYear")
+    private Short indepYear;
+    private Integer population;
+    @Column(name = "LifeExpectancy")
+    private Float lifeExpectancy;
+    @Column(name = "GNP")
+    private Float gNp;
+    @Column(name = "GNPOld")
+    private Float gNpOld;
+    @Column(name = "LocalName")
+    private String localeName;
+    @Column(name = "GovernmentForm")
+    private String gouvernementForme;
+    private String headOfState;
+    private Integer capital;
+    private String code2;
 
 }
